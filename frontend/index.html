@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MochaTrade â€” Regulatory Policy & Compliance Intelligence</title>
+  <title>MochaTrade Ã¢â‚¬â€ Regulatory Policy & Compliance Intelligence</title>
   <meta name="description" content="AI-assisted regulatory ingestion, human review queue, and deterministic compliance evaluation engine for cross-border broker trading policies.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +17,11 @@
     <header class="app-header">
       <div class="brand">
         <div class="brand-logo">
-          <div class="logo-orb"></div>
           <span class="logo-symbol">M</span>
         </div>
         <div class="brand-text">
           <div class="brand-title-wrap">
-            <span class="brand-name">Mocha<span class="gradient-text">Trade</span></span>
+            <span class="brand-name">MochaTrade</span>
             <span class="version-tag">v5 Policy Engine</span>
           </div>
           <span class="brand-subtitle">Cross-Border Trading Policy Extraction &amp; Deterministic Compliance</span>
@@ -194,7 +193,7 @@
 
             <!-- Summary Banner -->
             <div class="verdict-banner" id="verdict-banner">
-              <div class="verdict-status-icon" id="verdict-status-icon">âš–ï¸</div>
+              <div class="verdict-status-icon" id="verdict-status-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg></div>
               <div class="verdict-details">
                 <h3 id="verdict-title">No Evaluation Run Yet</h3>
                 <p id="verdict-summary">Select a jurisdiction and parameters on the left, then click <strong>Run Compliance Evaluation</strong>.</p>
@@ -392,7 +391,9 @@
             <!-- Step 1 -->
             <div class="flow-card">
               <div class="flow-step-num">01</div>
-              <div class="flow-icon">ðŸ“¥</div>
+              <div class="flow-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              </div>
               <h3>Source Ingestion</h3>
               <p>Preserves raw bytes in MinIO, computes deterministic SHA-256 hash, and deduplicates against the source registry.</p>
               <div class="flow-tech-tags">
@@ -402,12 +403,14 @@
               </div>
             </div>
 
-            <div class="flow-connector">âž”</div>
+            <div class="flow-connector">Ã¢Å¾â€</div>
 
             <!-- Step 2 -->
             <div class="flow-card">
               <div class="flow-step-num">02</div>
-              <div class="flow-icon">ðŸ“‘</div>
+              <div class="flow-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
               <h3>v5 Per-Page Router</h3>
               <p>PyMuPDF fast triage routes clean pages to PyMuPDF4LLM, tables to Docling, and scans to DeepSeek-OCR2 (HF Transformers).</p>
               <div class="flow-tech-tags">
@@ -417,12 +420,14 @@
               </div>
             </div>
 
-            <div class="flow-connector">âž”</div>
+            <div class="flow-connector">Ã¢Å¾â€</div>
 
             <!-- Step 3 -->
             <div class="flow-card">
               <div class="flow-step-num">03</div>
-              <div class="flow-icon">ðŸ¤–</div>
+              <div class="flow-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+              </div>
               <h3>AI Extraction &amp; Judge</h3>
               <p>LLM extracts candidate rules, LLM-as-a-judge adds <code>evidence_tag</code>, and a deterministic verbatim check discards hallucinated quotes.</p>
               <div class="flow-tech-tags">
@@ -432,12 +437,12 @@
               </div>
             </div>
 
-            <div class="flow-connector">âž”</div>
+            <div class="flow-connector">Ã¢Å¾â€</div>
 
             <!-- Step 4 -->
             <div class="flow-card">
               <div class="flow-step-num">04</div>
-              <div class="flow-icon">âš–ï¸</div>
+              <div class="flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"></circle></svg></div>
               <h3>Human Review Gate</h3>
               <p>Compliance officer approves, rejects, or edits rules. Only approved rules are committed to the queryable rule store.</p>
               <div class="flow-tech-tags">
@@ -447,12 +452,14 @@
               </div>
             </div>
 
-            <div class="flow-connector">âž”</div>
+            <div class="flow-connector">Ã¢Å¾â€</div>
 
             <!-- Step 5 -->
             <div class="flow-card">
               <div class="flow-step-num">05</div>
-              <div class="flow-icon">âš¡</div>
+              <div class="flow-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
               <h3>Deterministic Evaluator</h3>
               <p>Evaluates broker profiles against approved rules without LLMs in the hot path. Returns PASS, CONFLICT, or UNKNOWN with citations.</p>
               <div class="flow-tech-tags">
@@ -507,10 +514,10 @@
             <div class="panel-card az-input-card">
               <label for="az-country">Where are you evaluating compliance?</label>
               <select id="az-country" class="form-select"></select>
-              <span class="field-hint" id="az-country-note">Loading countries…</span>
+              <span class="field-hint" id="az-country-note">Loading countriesâ€¦</span>
 
               <details class="az-context" id="az-context">
-                <summary>Context <span class="field-hint" style="display:inline">optional — only what affects applicability</span></summary>
+                <summary>Context <span class="field-hint" style="display:inline">optional â€” only what affects applicability</span></summary>
                 <div class="form-row" style="margin-top: 12px;">
                   <div class="form-group flex-1">
                     <label for="az-ctx-product">Product</label>
@@ -533,13 +540,13 @@
                   </div>
                   <div class="form-group flex-1">
                     <label for="az-ctx-destination">Destination</label>
-                    <input type="text" id="az-ctx-destination" placeholder="e.g. São Paulo" autocomplete="off">
+                    <input type="text" id="az-ctx-destination" placeholder="e.g. SÃ£o Paulo" autocomplete="off">
                   </div>
                 </div>
               </details>
 
               <label for="az-text" style="margin-top: 16px;">Your rules</label>
-              <textarea id="az-text" rows="7" placeholder="Paste or type your rules here, one per line...&#10;&#10;1. Revenue must exceed â‚¹100 crore.&#10;2. The company must be profitable."></textarea>
+              <textarea id="az-text" rows="7" placeholder="Paste or type your rules here, one per line...&#10;&#10;1. Revenue must exceed Ã¢â€šÂ¹100 crore.&#10;2. The company must be profitable."></textarea>
               <div class="az-input-meta">
                 <span class="field-hint" id="az-text-count">0 rules detected</span>
                 <button type="button" class="az-link-btn" id="az-sample-btn">Load sample rules</button>
@@ -549,7 +556,7 @@
                 <div class="az-file-info">
                   <div>
                     <div class="az-file-name" id="az-file-name">document.pdf</div>
-                    <div class="az-file-sub" id="az-file-sub">PDF Â· 0 KB</div>
+                    <div class="az-file-sub" id="az-file-sub">PDF Ã‚Â· 0 KB</div>
                     <div class="az-file-state" id="az-file-state"></div>
                   </div>
                 </div>
@@ -562,7 +569,7 @@
               <div class="az-dropzone" id="az-dropzone">
                 <input type="file" id="az-file-input" class="file-input-hidden" accept=".pdf,.docx,.doc,.txt,.md">
                 <p class="dropzone-main-text">Drag &amp; drop your document here or <span class="browse-link">browse files</span></p>
-                <span class="dropzone-hint">PDF â€¢ DOCX â€¢ TXT (max 10 MB)</span>
+                <span class="dropzone-hint">PDF Ã¢â‚¬Â¢ DOCX Ã¢â‚¬Â¢ TXT (max 10 MB)</span>
               </div>
 
               <div class="az-error" id="az-input-error" style="display: none;"></div>
@@ -579,7 +586,7 @@
           <div class="az-stage" id="az-stage-review" style="display: none;">
             <div class="az-stage-head">
               <div>
-                <span class="card-badge">Step 2 of 3 · Review</span>
+                <span class="card-badge">Step 2 of 3 Â· Review</span>
                 <h2>Rules detected</h2>
                 <p class="card-desc">Check what was captured. Edit, delete, or add rules before analysis.</p>
               </div>
@@ -602,7 +609,7 @@
           <div class="az-stage" id="az-stage-result" style="display: none;">
             <div class="az-stage-head">
               <div>
-                <span class="card-badge">Step 3 of 3 · Compliance report</span>
+                <span class="card-badge">Step 3 of 3 Â· Compliance report</span>
                 <h2 id="az-report-title">Compliance Analysis</h2>
               </div>
               <button type="button" class="btn btn-outline btn-sm" id="az-btn-edit-rules">Edit rules &amp; re-analyze</button>
@@ -611,7 +618,7 @@
             <div class="az-chat" id="az-chat"></div>
 
             <form class="az-composer" id="az-composer">
-              <input type="text" id="az-chat-input" placeholder="Ask about this analysis — e.g. Why is Rule 2 non-compliant?" autocomplete="off" maxlength="2000">
+              <input type="text" id="az-chat-input" placeholder="Ask about this analysis â€” e.g. Why is Rule 2 non-compliant?" autocomplete="off" maxlength="2000">
               <button type="submit" class="btn btn-primary" id="az-chat-send">Send</button>
             </form>
           </div>
@@ -676,11 +683,11 @@
     <footer class="app-footer">
       <div class="footer-brand">
         <span class="brand-name" style="font-size: 15px;">Mocha<span class="gradient-text">Trade</span></span>
-        <span class="footer-tag">Deterministic compliance engine Â· 15 markets Â· Zero-hallucination verdicts</span>
+        <span class="footer-tag">Deterministic compliance engine Ã‚Â· 15 markets Ã‚Â· Zero-hallucination verdicts</span>
       </div>
       <div class="footer-links">
-        <span class="footer-hint" id="footer-mode-hint">Demo Engine (Active) â€” no backend required</span>
-        <span class="footer-dot">Â·</span>
+        <span class="footer-hint" id="footer-mode-hint">Demo Engine (Active) Ã¢â‚¬â€ no backend required</span>
+        <span class="footer-dot">Ã‚Â·</span>
         <button class="footer-link-btn" id="footer-config-btn" type="button">API Config</button>
       </div>
     </footer>
@@ -690,3 +697,4 @@
   <script src="analyzer.js"></script>
 </body>
 </html>
+
